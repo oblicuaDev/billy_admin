@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "records",
+  "info": {
+    "singularName": "record",
+    "pluralName": "records",
+    "displayName": "record",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "invoice": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::invoice.invoice",
+      "inversedBy": "record"
+    },
+    "billy_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::billy-user.billy-user",
+      "inversedBy": "records"
+    },
+    "channel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::channel.channel"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

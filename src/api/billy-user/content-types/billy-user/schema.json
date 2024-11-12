@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "billy_users",
+  "info": {
+    "singularName": "billy-user",
+    "pluralName": "billy-users",
+    "displayName": "billy_users",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "balance": {
+      "type": "string"
+    },
+    "billy_configuration": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::billy-configuration.billy-configuration",
+      "mappedBy": "billy_user"
+    },
+    "nit": {
+      "type": "string"
+    },
+    "razon_social": {
+      "type": "string"
+    },
+    "plan": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::plan.plan"
+    },
+    "auto_recharge": {
+      "type": "boolean",
+      "default": false
+    },
+    "records": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::record.record",
+      "mappedBy": "billy_user"
+    }
+  }
+}

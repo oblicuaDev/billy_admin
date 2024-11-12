@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etapas",
+  "info": {
+    "singularName": "etapa",
+    "pluralName": "etapas",
+    "displayName": "Etapa"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

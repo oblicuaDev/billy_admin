@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "billy_configurations",
+  "info": {
+    "singularName": "billy-configuration",
+    "pluralName": "billy-configurations",
+    "displayName": "Billy configuration",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tonos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "config.tonos"
+    },
+    "link_pago": {
+      "type": "string"
+    },
+    "frecuencia_cobros": {
+      "type": "string"
+    },
+    "canal_correo": {
+      "type": "string"
+    },
+    "canal_sms": {
+      "type": "string"
+    },
+    "avatar_billy": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cabecera_correo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "firma_correo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "billy_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::billy-user.billy-user",
+      "inversedBy": "billy_configuration"
+    },
+    "plantilla_correo": {
+      "type": "blocks"
+    },
+    "link_drive": {
+      "type": "string"
+    },
+    "client_type": {
+      "type": "boolean",
+      "default": false
+    },
+    "start_date": {
+      "type": "date"
+    }
+  }
+}

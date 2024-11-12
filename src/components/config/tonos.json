@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_config_tonos",
+  "info": {
+    "displayName": "Tonos",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "amigable": {
+      "type": "component",
+      "repeatable": false,
+      "component": "config.tono",
+      "required": false
+    },
+    "formal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "config.tono",
+      "required": false
+    },
+    "exigente": {
+      "type": "component",
+      "repeatable": false,
+      "component": "config.tono",
+      "required": false
+    },
+    "con_plantilla": {
+      "type": "component",
+      "repeatable": false,
+      "component": "config.tono",
+      "required": false
+    }
+  }
+}

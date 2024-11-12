@@ -1,0 +1,26 @@
+{
+    "collectionName": "components_config_tono",
+  "info": {
+    "displayName": "Tono",
+    "icon": "bell"
+  },
+"options": {},
+    "type": "component",
+    "repeatable": false,
+    "attributes": {
+      "canales": {
+      "type": "component",
+      "repeatable": false,
+      "component": "config.canales"
+    },
+      "active": {
+        "type": "boolean",
+        "default": false
+      },
+      "filters": {
+        "type": "json",
+        "default": []
+      }
+    }
+  }
+  

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_config_canales",
+  "info": {
+    "displayName": "Canales",
+    "icon": "channels"
+  },
+  "options": {},
+  "attributes": {
+    "email": {
+      "type": "boolean",
+      "default": false
+    },
+    "sms": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

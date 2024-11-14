@@ -3,7 +3,7 @@ const cronTasks = require("./cron-tasks");
 module.exports = ({ env }) => ({
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),
-  url: "http://192.168.1.20:1337", // Ajusta tu dirección IP local
+  url: env("MY_HEROKU_URL"), // Ajusta tu dirección IP local
   app: {
     keys: env.array("APP_KEYS"),
   },

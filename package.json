@@ -17,6 +17,8 @@
     "@strapi/strapi": "4.25.11",
     "mysql": "2.18.1",
     "node-schedule": "^2.1.1",
+    "pg": "^8.13.1",
+    "pg-connection-string": "^2.7.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
